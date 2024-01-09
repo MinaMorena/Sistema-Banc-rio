@@ -17,7 +17,7 @@ async function saldoBancario(req, res) {
         return res.status(401).json({ mensagem: "Senha incorreta." })
     }
 
-    return res.json(contaUsuario.saldo);
+    return res.json({ saldo: contaUsuario.saldo });
 }
 
 async function extratoBancario(req, res) {
